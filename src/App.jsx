@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
+import { Analytics } from "@vercel/analytics/next";
 import ServiceSummary from "./sections/ServiceSummary";
 import Services from "./sections/Services";
 import ReactLenis from "lenis/react";
