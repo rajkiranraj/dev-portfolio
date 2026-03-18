@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
-import { Analytics } from "@vercel/analytics/next";
 import ServiceSummary from "./sections/ServiceSummary";
 import Services from "./sections/Services";
 import ReactLenis from "lenis/react";
@@ -10,6 +9,7 @@ import Works from "./sections/Works";
 import ContactSummary from "./sections/ContactSummary";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
+import DownloadCV from "./components/DownloadCV";
 
 const App = () => {
   const { progress } = useProgress();
@@ -50,6 +50,7 @@ const App = () => {
         <ContactSummary />
         <Contact />
       </div>
+      <DownloadCV />
     </ReactLenis>
   );
 };
