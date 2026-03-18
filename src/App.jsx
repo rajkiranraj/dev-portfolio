@@ -10,6 +10,7 @@ import ContactSummary from "./sections/ContactSummary";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
 import DownloadCV from "./components/DownloadCV";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   const { progress } = useProgress();
@@ -51,6 +52,7 @@ const App = () => {
         <Contact />
       </div>
       <DownloadCV />
+      <Analytics />
     </ReactLenis>
   );
 };
