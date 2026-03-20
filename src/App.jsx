@@ -9,8 +9,12 @@ import Works from "./sections/Works";
 import ContactSummary from "./sections/ContactSummary";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
+<<<<<<< HEAD
 import LoadingOverlay from "./components/LoadingOverlay";
 import TechStackSection from "./components/TechStackSection";
+=======
+import DownloadCV from "./components/DownloadCV";
+>>>>>>> 34391c2dc0cc55ed53b6bc0d7e302b6396d247da
 
 const App = () => {
   const { progress } = useProgress();
@@ -39,6 +43,7 @@ const App = () => {
         <ContactSummary />
         <Contact />
       </div>
+      <DownloadCV />
     </ReactLenis>
   );
 };

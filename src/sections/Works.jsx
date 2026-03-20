@@ -58,7 +58,7 @@ const Works = () => {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
         duration: 0.15,
         ease: "power2.out",
-      }
+      },
     );
 
     gsap.to(previewRef.current, {
@@ -113,9 +113,12 @@ const Works = () => {
         onMouseMove={handleMouseMove}
       >
         {projects.map((project, index) => (
-          <div
+          <a
             key={project.id}
             id="project"
+            href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative flex flex-col gap-1 py-5 cursor-pointer group md:gap-0"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
@@ -161,7 +164,7 @@ const Works = () => {
                 className="absolute bg-center px-14 rounded-xl"
               />
             </div>
-          </div>
+          </a>
         ))}
         {/* desktop Flaoting preview image */}
         <div
