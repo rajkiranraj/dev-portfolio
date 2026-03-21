@@ -27,11 +27,4 @@
 
 ---
 
-## 📦 Setup & Installation
 
-```bash
-git clone https://github.com/Ali-Sanati/awwwards-portfolio.git
-cd awwwards-portfolio
-npm install
-npm run dev
-```
