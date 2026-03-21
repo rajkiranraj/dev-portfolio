@@ -12,6 +12,7 @@ import { useProgress } from "@react-three/drei";
 import LoadingOverlay from "./components/LoadingOverlay";
 import TechStackSection from "./components/TechStackSection";
 import DownloadCV from "./components/DownloadCV";
+import SplashCursor from "./components/SplashCursor";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
 
   return (
     <ReactLenis root className="relative w-screen min-h-screen overflow-x-auto">
+      <SplashCursor />
       {showLoader && (
         <LoadingOverlay
           percent={Math.floor(progress)}
