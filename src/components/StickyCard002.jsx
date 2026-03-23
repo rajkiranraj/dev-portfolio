@@ -90,7 +90,7 @@ const StickyCard002 = ({
       <div className="sticky-cards relative flex h-screen w-full items-center justify-center overflow-hidden p-3 lg:p-8">
         <div
           className={cn(
-            "relative h-[80vh] w-full max-w-sm overflow-hidden rounded-lg sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl",
+            "relative h-[80vh] w-full max-w-sm overflow-hidden rounded-[2.5rem] sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl",
             containerClassName,
           )}
         >
@@ -101,7 +101,7 @@ const StickyCard002 = ({
                 src={card.image}
                 alt={card.alt || ""}
                 className={cn(
-                  "rounded-4xl absolute h-full w-full object-cover",
+                  "rounded-[2.5rem] absolute h-full w-full object-contain bg-black",
                   imageClassName,
                 )}
                 ref={(el) => {
@@ -115,7 +115,7 @@ const StickyCard002 = ({
                 href={card.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute h-full w-full cursor-pointer"
+                className="absolute h-full w-full cursor-pointer rounded-[2.5rem] overflow-hidden"
                 ref={(el) => {
                   imageRefs.current[i] = el;
                 }}
@@ -124,7 +124,7 @@ const StickyCard002 = ({
                   src={card.image}
                   alt={card.alt || ""}
                   className={cn(
-                    "rounded-4xl h-full w-full object-cover",
+                    "rounded-[2.5rem] h-full w-full object-contain bg-black",
                     imageClassName,
                   )}
                 />

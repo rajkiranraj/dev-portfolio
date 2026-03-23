@@ -5,7 +5,7 @@ const Certificates = () => {
   const certificateCards = [
     {
       id: 1,
-      image: "/images/certificates/img19.jpg",
+      image: "/images/certificates/img19.png",
       alt: "HackerRank Problem Solving Certificate",
       link: "https://www.hackerrank.com/certificates/0fe1693b405a",
     },
