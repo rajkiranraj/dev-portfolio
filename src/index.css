@@ -134,3 +134,26 @@ body {
   @apply text-[42px] sm:text-[52px] md:text-[62px] lg:text-[100px];
 }
 
+/* Achievement card glowing border */
+.achievement-card-glow {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(207, 163, 85, 0.3),
+    rgba(255, 255, 255, 0.1),
+    rgba(207, 163, 85, 0.2)
+  );
+  box-shadow:
+    0 0 15px rgba(207, 163, 85, 0.15),
+    0 0 30px rgba(207, 163, 85, 0.08),
+    inset 0 0 15px rgba(255, 255, 255, 0.03);
+  transition: box-shadow 0.4s ease;
+}
+
+.achievement-card-glow:hover {
+  box-shadow:
+    0 0 20px rgba(207, 163, 85, 0.25),
+    0 0 40px rgba(207, 163, 85, 0.12),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}

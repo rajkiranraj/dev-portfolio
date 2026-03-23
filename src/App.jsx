@@ -12,6 +12,8 @@ import { useProgress } from "@react-three/drei";
 import LoadingOverlay from "./components/LoadingOverlay";
 import TechStackSection from "./components/TechStackSection";
 import DownloadCV from "./components/DownloadCV";
+import Certificates from "./sections/Certificates";
+import Achievements from "./sections/Achievements";
 import SplashCursor from "./components/SplashCursor";
 
 
@@ -40,6 +42,8 @@ const App = () => {
         <About />
         <TechStackSection />
         <Works />
+        <Certificates />
+        <Achievements />
         <ContactSummary />
         <Contact />
       </div>
